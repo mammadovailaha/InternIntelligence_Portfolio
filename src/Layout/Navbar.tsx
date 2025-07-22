@@ -15,7 +15,7 @@ const Navbar = () => {
       const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="w-full h-16 md:h-[86px] flex justify-center items-center mt-5">
-      <div className="w-[95%] h-full rounded-[50px]  bg-transparent md:bg-[#171717] flex justify-center items-center relative">
+      <div className="w-[95%] h-full rounded-[50px]  bg-transparent md:bg-[#171717] flex justify-center items-center relative " >
         <div className="flex  items-center gap-2 bg-transparent backdrop-blur-2xl">
           <div className="w-11 h-11 bg-[#FD853A]  rounded-full flex justify-center items-center font-[lufga] text-white leading-4 lg:leading-5 text-base lg:text-lg">
             IM
@@ -32,12 +32,12 @@ const Navbar = () => {
         </div>
 <div
   className={`
-    absolute top-16 right-0 z-50 
+    absolute top-16 z-50  
     w-full h-[calc(100vh-4rem)] md:static md:h-full md:w-[75%] lg:w-[80%]
-    bg-white md:bg-[#171717] 
+    bg-white md:bg-[#171717] rounded-4xl
     transition-transform duration-300 ease-in-out
     transform
-    ${isOpen ? "translate-x-0" : "translate-x-full"}
+    ${isOpen ? "translate-x-0 right-0 " : "translate-x-full right-[-100%]"}
     md:translate-x-0 md:opacity-100 md:pointer-events-auto md:flex
   `}
 >
