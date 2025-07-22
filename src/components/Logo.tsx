@@ -1,6 +1,6 @@
 const Logo = () => {
   return (
-    <div className="flex  items-center gap-2 bg-transparent backdrop-blur-2xl rounded-4xl">
+    <div className="flex px-3.5 py-0.5 items-center gap-2 bg-[#d6d1d163] backdrop-blur-2xl rounded-4xl">
       <div className="w-11 h-11 bg-[#FD853A]  rounded-full flex justify-center items-center font-[lufga] text-white leading-4 lg:leading-5 text-base lg:text-lg">
         IM
       </div>

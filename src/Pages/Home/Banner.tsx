@@ -4,7 +4,7 @@ import personalPhoto from "../../assets/icons/photo for cv.png";
 import quote from "../../assets/icons/quote-up.svg";
 const Banner = () => {
   return (
-    <div className="w-full h-[600px] flex flex-col justify-between items-center gap-25 mt-5">
+    <div className="w-full h-[520px] md:h-[600px] flex flex-col justify-between items-center gap-25 mt-5">
       <div className="flex flex-col justify-between items-center gap-30 group">
         <div className=" relative flex flex-col justify-center items-center gap-5  ">
           <div className="w-15 flex h-16 items-end">
@@ -30,7 +30,7 @@ const Banner = () => {
           <div className="w-7 h-7 left-[-8%] md:left-[-6%] absolute bottom-[-10%] md:bottom-[-8%]"><img className="w-full h-full object-cover rotate-180" src={bannerDesign2} alt="design" /></div>
         </div>
         <div className="flex justify-center w-full ">
-          <div className="w-60 lg:w-80 h-32 flex flex-col items-start left-[6%] lg:left-[10%] absolute top-[50%] md:top-[95%] xl:top-[70%] group-hover:top-[40%] transition-all duration-500">
+          <div className="w-60 lg:w-80 h-32 flex flex-col items-start left-[6%] lg:left-[10%] absolute top-[60%] md:top-[80%] xl:top-[70%] group-hover:top-[40%] transition-all duration-500">
             <div className="w-9 h-9">
               <img
                 className="w-full h-full object-cover"
@@ -44,15 +44,15 @@ const Banner = () => {
             </p>
           </div>
           <div className="flex h-80 flex-col justify-center items-center relative">
-            <div className="w-90 md:w-110 lg:w-150 h-45 md:h-55 lg:h-75 bg-[#FD853A] rounded-t-full relative z-0  bottom-[10%]"></div>
-            <div className="w-3xl h-65 absolute z-10">
+            <div className="w-70 md:w-110 lg:w-150 h-40 md:h-64 lg:h-75 bg-[#FD853A] rounded-t-full relative z-0   bottom-[10%]"></div>
+            <div className="w-70 md:w-120 h-50 md:h-70 lg:w-3xl lg:h-65 absolute z-10">
               <img
-                className="w-full h-full object-cover  bottom-[30%] opacity-0 group-hover:opacity-100 transition-all duration-500"
+                className="w-full h-full object-cover  bottom-[30%] opacity-100 lg:opacity-0  group-hover:opacity-100 transition-all duration-500"
                 src={bannerDesign}
                 alt="design"
               />
             </div>
-            <div className="absolute w-100 lg:w-130 h-100 md:h-130 lg:h-160 z-20 bottom-[22%] md:bottom-[15%] lg:bottom-[13%]  ">
+            <div className="absolute w-50 md:w-90 lg:w-130 h-70 md:h-120 lg:h-160 z-20 bottom-[35%] md:bottom-[20%] lg:bottom-[13%]  ">
               <img
                 className="w-full h-full object-cover"
                 src={personalPhoto}
