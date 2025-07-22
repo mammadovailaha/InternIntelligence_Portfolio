@@ -44,15 +44,15 @@ const Banner = () => {
             </p>
           </div>
           <div className="flex h-80 flex-col justify-center items-center relative">
-            <div className="w-90 md:w-110 lg:w-150 h-45 md:h-55 lg:h-75 bg-[#FD853A] rounded-t-full relative z-0"></div>
-            <div className="w-4xl h-130 absolute z-10">
+            <div className="w-90 md:w-110 lg:w-150 h-45 md:h-55 lg:h-75 bg-[#FD853A] rounded-t-full relative z-0  bottom-[10%]"></div>
+            <div className="w-3xl h-65 absolute z-10">
               <img
-                className="w-full h-full object-cover bottom-[10%] opacity-0 group-hover:opacity-100 transition-all duration-500"
+                className="w-full h-full object-cover  bottom-[30%] opacity-0 group-hover:opacity-100 transition-all duration-500"
                 src={bannerDesign}
                 alt="design"
               />
             </div>
-            <div className="absolute w-100 lg:w-130 h-100 md:h-130 lg:h-160 z-20 bottom-[22%] md:bottom-[15%] lg:bottom-[3%]  ">
+            <div className="absolute w-100 lg:w-130 h-100 md:h-130 lg:h-160 z-20 bottom-[22%] md:bottom-[15%] lg:bottom-[13%]  ">
               <img
                 className="w-full h-full object-cover"
                 src={personalPhoto}

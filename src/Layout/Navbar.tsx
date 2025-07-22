@@ -2,11 +2,11 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { IoMdMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
+import Logo from "../components/Logo";
 
 const navItems = [
   { label: "Home", path: "/" },
   { label: "About", path: "/about" },
-  { label: "Resume", path: "/resume" },
   { label: "Project", path: "/project" },
   { label: "Contact", path: "/contact" },
 ];
@@ -14,17 +14,9 @@ const navItems = [
 const Navbar = () => {
       const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="w-full h-16 md:h-[86px] flex justify-center items-center mt-5">
-      <div className="w-[95%] h-full rounded-[50px]  bg-transparent md:bg-[#171717] flex justify-center items-center relative " >
-        <div className="flex  items-center gap-2 bg-transparent backdrop-blur-2xl">
-          <div className="w-11 h-11 bg-[#FD853A]  rounded-full flex justify-center items-center font-[lufga] text-white leading-4 lg:leading-5 text-base lg:text-lg">
-            IM
-          </div>
-          <div className="flex flex-col justify-center items-start">
-            <h2 className="text-black md:text-white font-[lufga] text-lg">Ilaha</h2>
-            <p className="text-black md:text-white font-[lufga] text-lg ">Mammadova</p>
-          </div>
-        </div>
+    <div className="w-full h-16 lg:h-[86px] flex justify-center items-center mt-5">
+      <div className="w-[90%] h-full rounded-[50px]  bg-transparent md:bg-[#171717] flex justify-center items-center relative " >
+       <Logo/>
         <div className="md:hidden flex justify-end items-center w-full">
              <button onClick={() => setIsOpen(!isOpen)} className="text-black">
             {isOpen ? <IoMdClose size={28} /> : <IoMdMenu size={28} />}
