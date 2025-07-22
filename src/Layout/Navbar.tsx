@@ -14,10 +14,10 @@ const navItems = [
 const Navbar = () => {
       const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="w-full h-16 lg:h-[86px] flex justify-center items-center mt-5">
-      <div className="w-[90%] h-full rounded-[50px]  bg-transparent md:bg-[#171717] flex justify-center items-center relative " >
+    <div className="w-full h-18 lg:h-[86px] flex justify-center items-center mt-5">
+      <div className="w-[95%] h-full rounded-[50px]  bg-transparent md:bg-[#171717] flex justify-center items-center relative " >
        <Logo/>
-        <div className="md:hidden flex justify-end items-center w-full">
+        <div className="md:hidden h-18 lg:h-[86px]  flex justify-end items-center w-full">
              <button onClick={() => setIsOpen(!isOpen)} className="text-black">
             {isOpen ? <IoMdClose size={28} /> : <IoMdMenu size={28} />}
           </button>
@@ -37,8 +37,8 @@ const Navbar = () => {
           {navItems.map((link) => (
             <NavLink
               className={({ isActive }) =>
-                `text-[20px] font-[lufga] text-black md:text-white  md:px-4 py-2  lg:py-3 lg:px-8 xl:py-4 xl:px-12 rounded-4xl ${
-                  isActive ? "bg-[#FD853A] text-white " : "hover:bg-[#ffffff4a]"
+                `text-[20px] font-[lufga] text-black md:text-white px-28  md:px-4 py-2  lg:py-3 lg:px-8 xl:py-4 xl:px-12 rounded-4xl ${
+                  isActive ? "bg-[#FD853A] text-white  " : "hover:bg-[#ffffff4a]"
                 }`
               }
               to={link.path}
