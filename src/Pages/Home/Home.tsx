@@ -1,9 +1,10 @@
+import Banner from "./Banner"
 
 
 const Home = () => {
   return (
-    <div>
-      burasi home pg
+    <div className="w-full h-auto">
+ <Banner/>
     </div>
   )
 }
