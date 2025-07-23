@@ -10,7 +10,7 @@ import Navbar from "../../Layout/Navbar";
 
 const Contact = () => {
   return (
-<div className="overflow-x-hidden">
+<div className="">
         <Navbar />
     <ScrollAnimation>
       <div
@@ -20,7 +20,7 @@ const Contact = () => {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
         }}
-        className="w-full h-screen flex flex-col justify-start items-center gap-10"
+        className="w-full h-auto flex flex-col justify-start items-center gap-10"
       >
         <h2 className=" text-[#344054] font-medium text-4xl md:text-6xl font-[lufga] flex  gap-3 mt-5">
           Let’s

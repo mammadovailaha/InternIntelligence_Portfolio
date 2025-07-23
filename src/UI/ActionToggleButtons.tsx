@@ -30,10 +30,10 @@ const ActionToggleButtons:FC<Props> = ({className}) => {
     }
   };
   return (
- <div className={`w-66 md:w-74 h-10 md:h-14 border  rounded-[60px] flex justify-center items-center gap-2 ${className}`}>
+ <div className={`w-56 md:w-74 h-10 md:h-14 border  rounded-[60px] flex justify-center items-center gap-2 ${className}`}>
       <button
         onClick={resumeClick}
-        className={`w-28 md:w-32 h-8 md:h-10 rounded-4xl flex justify-center items-center gap-2  transition-all duration-300 text-xs md:text-sm
+        className={`w-24 md:w-32 h-8 md:h-10 rounded-4xl flex justify-center items-center gap-2  transition-all duration-300 text-xs md:text-sm
           ${
             activeButton === "resume"
               ? "bg-[#FD853A] text-white border-white"
@@ -52,7 +52,7 @@ const ActionToggleButtons:FC<Props> = ({className}) => {
 
       <button
         onClick={hireMeClick}
-        className={`w-28 md:w-32 h-8 md:h-10 rounded-4xl flex justify-center items-center gap-2  transition-all duration-300 text-xs md:text-sm
+        className={`w-24 md:w-32 h-8 md:h-10 rounded-4xl flex justify-center items-center gap-2  transition-all duration-300 text-xs md:text-sm
           ${
             activeButton === "hire"
               ? "bg-[#FD853A] text-white border-white"

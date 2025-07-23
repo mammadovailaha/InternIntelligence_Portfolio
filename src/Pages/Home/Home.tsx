@@ -58,7 +58,7 @@ const experienceData = [
 
 const Home = () => {
   return (
-    <div className="w-full h-auto overflow-x-hidden">
+    <div className="w-full h-auto ">
       <Navbar />
       <Banner />
       <SectionList

@@ -38,7 +38,7 @@ const certificates = [
   },
   {
     title: "IT Essentials Course",
-    provider: "Cisco",
+    provider: "NTC",
     date: "February 2024"
   }
 ];
