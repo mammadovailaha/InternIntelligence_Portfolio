@@ -5,9 +5,9 @@ import quote from "../../assets/icons/quote-up.svg";
 import ActionToggleButtons from "../../UI/ActionToggleButtons";
 const Banner = () => {
   return (
-    <div className="w-full h-[520px] md:h-[600px] flex flex-col justify-between items-center gap-25 mt-5">
+    <div className="w-full h-[520px] md:h-[600px] flex flex-col justify-between items-center gap-25 mt-5 ">
       <div className="flex flex-col justify-between items-center gap-30 group">
-        <div className=" relative flex flex-col justify-center items-center gap-5  ">
+        <div className=" relative flex flex-col justify-center items-center gap-5 z-0 ">
           <div className="w-15 flex h-16 items-end">
             <button className="border border-black h-10 px-4 rounded-4xl text-lg">
               Hello!
@@ -31,7 +31,7 @@ const Banner = () => {
           <div className="w-7 h-7 left-[-8%] md:left-[-6%] absolute bottom-[-10%] md:bottom-[-8%]"><img className="w-full h-full object-cover rotate-180" src={bannerDesign2} alt="design" /></div>
         </div>
         <div className="flex justify-center w-full ">
-          <div className="w-60 lg:w-80 h-32 flex flex-col items-start left-[6%] lg:left-[10%] absolute top-[60%] md:top-[80%] xl:top-[70%] group-hover:top-[40%] transition-all duration-500">
+          <div className="w-60 lg:w-80 h-32 flex flex-col items-start left-[6%] lg:left-[10%] absolute top-[50%] md:top-[80%] xl:top-[70%] group-hover:top-[40%] transition-all duration-500">
             <div className="w-9 h-9">
               <img
                 className="w-full h-full object-cover"
@@ -60,7 +60,7 @@ const Banner = () => {
                 alt="personal photo"
               />
             </div>
-            <ActionToggleButtons className="bg-[#ffffff48] backdrop-blur-md absolute bottom-[25%] border border-white z-50"/>
+            <ActionToggleButtons className="bg-[#ffffff48] backdrop-blur-md absolute bottom-[35%] md:bottom-[30%] lg:bottom-[25%] border border-white z-50"/>
           </div>
         </div>
       </div>
