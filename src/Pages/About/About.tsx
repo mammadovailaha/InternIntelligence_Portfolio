@@ -1,5 +1,6 @@
-import SectionList from "../../components/SectionList";
-import Banner from "./Banner";
+import SectionList from "../../components/SectionList"
+import AboutHero from "./AboutHero"
+import Cerificates from "./Cerificates";
 
 const educationData = [
   {
@@ -55,11 +56,12 @@ const experienceData = [
   }
 ];
 
-const Home = () => {
+
+const About = () => {
   return (
-    <div className="w-full h-auto">
-      <Banner />
-      <SectionList
+    <>
+      <AboutHero/>
+       <SectionList
       listClassName="bg-white"
       data={educationData}
       title={"Education"}/>
@@ -67,8 +69,9 @@ const Home = () => {
       listClassName="bg-[#F2F4F7]"
       data={experienceData}
       title={"Work Experince"}/>
-    </div>
-  );
-};
+      <Cerificates/>
+    </>
+  )
+}
 
-export default Home;
+export default About
