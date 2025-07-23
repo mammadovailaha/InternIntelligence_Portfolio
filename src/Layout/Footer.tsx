@@ -1,7 +1,6 @@
 import { FaLinkedin } from "react-icons/fa";
 import MainButton from "../UI/MainButton";
 import { IoLogoGithub } from "react-icons/io";
-import Logo from "../UI/Logo";
 import { Link } from "react-router-dom";
 
 const navItems = [
@@ -25,10 +24,24 @@ const Footer = () => {
             onClick={() => {}}
           />
         </div>
-        <div className="w-full flex  flex-col md:flex-row justify-center items-start md:gap-20 lg:gap-56  ">
-          <div className="w-full flex  justify-center items-center gap-15  md:gap-20 lg:gap-56">
-            <div className=" flex flex-col justify-start place-items-end md:items-center gap-8 md:gap-5">
-              <Logo />
+        <div className="w-full flex  flex-col md:flex-row justify-center items-start gap-10 md:gap-20 lg:gap-56  ">
+          <div className="w-full flex  justify-center items-center gap-10  md:gap-20 lg:gap-56">
+            <div className=" flex flex-col justify-start items-center md:items-center gap-4 md:gap-5">
+              <Link to={"/"}>
+                <div
+                  className={`flex px-3.5 py-0.5 items-center gap-2 rounded-4xl `}
+                >
+                  <div className="w-11 h-11 bg-[#FD853A]  rounded-full flex justify-center items-center font-[lufga] text-white leading-4 lg:leading-5 text-base lg:text-lg">
+                    IM
+                  </div>
+                  <div className="flex flex-col justify-center items-start">
+                    <h2 className="text-white font-[lufga] text-lg">Ilaha</h2>
+                    <p className="text-white font-[lufga] text-lg ">
+                      Mammadova
+                    </p>
+                  </div>
+                </div>
+              </Link>
               <div className="flex justify-center items-center gap-6">
                 <Link
                   to={"https://www.linkedin.com/in/ilaha-mammadova-0ab538356"}
@@ -47,7 +60,7 @@ const Footer = () => {
               <ul className="flex flex-col justify-center items-start gap-1 md:gap-3">
                 {navItems.map((link) => (
                   <Link
-                    className="text-[#FCFCFD] text-lg font-[lufga]"
+                    className="text-[#FCFCFD] text-xs md:text-lg font-[lufga]"
                     to={link.path}
                   >
                     {link.label}
@@ -58,12 +71,14 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col justify-center items-start gap-3 md:gap-5 px-8">
-            <h3 className="text-[#FD853A] font-[lufga] text-lg md:text-2xl ">Contact</h3>
+            <h3 className="text-[#FD853A] font-[lufga] text-lg md:text-2xl ">
+              Contact
+            </h3>
             <ul className=" flex flex-col justify-center items-start gap-2 md:gap-3">
-              <li className="text-[#FCFCFD] text-lg font-[lufga]">
+              <li className="text-[#FCFCFD] text-xs md:text-lg font-[lufga]">
                 +994 50 993 45 14
               </li>
-              <li className="text-[#FCFCFD] text-lg font-[lufga]">
+              <li className="text-[#FCFCFD] text-xs md:text-lg font-[lufga]">
                 mammadovailah03@gmail.com
               </li>
             </ul>

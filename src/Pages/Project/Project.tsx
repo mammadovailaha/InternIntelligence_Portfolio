@@ -3,6 +3,7 @@ import photo from "../../assets/icons/projectPhoto1.png";
 import ProjectCard from "./ProjectCard";
 import bgImage from "../../assets/icons/projectPageBg.jpg";
 import NavigateArrow from "../../components/NavigateArrow";
+import { useNavigate } from "react-router-dom";
 
 const projectData = [
   {
@@ -17,6 +18,9 @@ const projectData = [
 ];
 
 const Project: FC = () => {
+  const navigate=useNavigate();
+ 
+  
   return (
     <div
       style={{
@@ -38,7 +42,7 @@ const Project: FC = () => {
         </h2>
         <div className="w-[90%] flex justify-start items-center relative z-10">
           {projectData.map((data) => (
-            <ProjectCard key={data.id} title={data.title} src={data.image} />
+            <ProjectCard  onClick={()=>navigate(`/project/project-detail/${data.id}`)} key={data.id} title={data.title} src={data.image} />
           ))}
         </div>
       </div>
