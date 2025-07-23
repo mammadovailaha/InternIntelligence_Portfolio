@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { IoMdMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
-import Logo from "../components/Logo";
+import Logo from "../UI/Logo";
 
 const navItems = [
   { label: "Home", path: "/" },

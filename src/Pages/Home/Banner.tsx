@@ -2,6 +2,7 @@ import bannerDesign2 from "../../assets/icons/bannerDesign2.svg";
 import bannerDesign from "../../assets/icons/bannerDesign.svg";
 import personalPhoto from "../../assets/icons/photo for cv.png";
 import quote from "../../assets/icons/quote-up.svg";
+import ActionToggleButtons from "../../UI/ActionToggleButtons";
 const Banner = () => {
   return (
     <div className="w-full h-[520px] md:h-[600px] flex flex-col justify-between items-center gap-25 mt-5">
@@ -59,6 +60,7 @@ const Banner = () => {
                 alt="personal photo"
               />
             </div>
+            <ActionToggleButtons className="bg-[#ffffff48] backdrop-blur-md absolute bottom-[25%] border border-white z-50"/>
           </div>
         </div>
       </div>
