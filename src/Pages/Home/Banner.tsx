@@ -1,7 +1,7 @@
 import bannerDesign2 from "../../assets/icons/bannerDesign2.svg";
 import bannerDesign from "../../assets/icons/bannerDesign.svg";
 import personalPhoto from "../../assets/icons/photo for cv.png";
-import quote from "../../assets/icons/quote-up.svg";
+// import quote from "../../assets/icons/quote-up.svg";
 import ActionToggleButtons from "../../UI/ActionToggleButtons";
 const Banner = () => {
   return (
@@ -31,7 +31,7 @@ const Banner = () => {
           <div className="w-7 h-7 left-[-8%] md:left-[-6%] absolute bottom-[-10%] md:bottom-[-8%]"><img className="w-full h-full object-cover rotate-180" src={bannerDesign2} alt="design" /></div>
         </div>
         <div className="flex justify-center w-full ">
-          <div className="w-60 lg:w-80 h-32 flex flex-col items-start left-[6%] lg:left-[10%] absolute opacity-0 xl:opacity-100 md:top-[80%] xl:top-[70%] group-hover:top-[40%] transition-all duration-500">
+          {/* <div className="w-60 lg:w-80 h-32 flex flex-col items-start left-[6%] lg:left-[10%] absolute opacity-0 xl:opacity-100 md:top-[80%] xl:top-[70%] group-hover:top-[40%] transition-all duration-500">
             <div className="w-9 h-9">
               <img
                 className="w-full h-full object-cover"
@@ -43,7 +43,7 @@ const Banner = () => {
               Specializing in HTML, CSS, JavaScript, and React — I build elegant
               and efficient web interfaces.
             </p>
-          </div>
+          </div> */}
           <div className="flex h-80 flex-col justify-center items-center relative">
             <div className="w-70 md:w-110 lg:w-150 h-40 md:h-64 lg:h-75 bg-[#FD853A] rounded-t-full relative z-0   bottom-[10%]"></div>
             <div className="w-70 md:w-120 h-50 md:h-70 lg:w-3xl lg:h-65 absolute z-10">
