@@ -1,4 +1,4 @@
-import React from "react";
+
 import bgImage from "../../assets/icons/contactBg.svg";
 import ScrollAnimation from "../../components/ScrollAnimation";
 import { FaLinkedin, FaPhoneAlt } from "react-icons/fa";
@@ -6,9 +6,12 @@ import { IoLogoGithub } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { ImLocation2 } from "react-icons/im";
 import { MdOutlineMail } from "react-icons/md";
+import Navbar from "../../Layout/Navbar";
 
 const Contact = () => {
   return (
+<div className="overflow-x-hidden">
+        <Navbar />
     <ScrollAnimation>
       <div
         style={{
@@ -56,6 +59,7 @@ const Contact = () => {
         </div>
       </div>
     </ScrollAnimation>
+</div>
   );
 };
 
