@@ -1,7 +1,7 @@
 import { FaLinkedin } from "react-icons/fa";
-import MainButton from "../components/MainButton";
+import MainButton from "../UI/MainButton";
 import { IoLogoGithub } from "react-icons/io";
-import Logo from "../components/Logo";
+import Logo from "../UI/Logo";
 import { Link } from "react-router-dom";
 
 const navItems = [
